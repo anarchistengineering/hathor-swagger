@@ -1,0 +1,20 @@
+{
+  "name": "hathor-swagger",
+  "version": "0.0.1",
+  "description": "A Swagger plugin for Hathor",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab"
+  },
+  "author": "Jeremy Darling <jeremy.darling@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "code": "^4.0.0",
+    "lab": "^12.1.0"
+  },
+  "dependencies": {
+    "hapi-swaggered": "^2.8.1",
+    "hapi-swaggered-ui": "^2.6.0",
+    "hathor-utils": "^0.0.2"
+  }
+}
