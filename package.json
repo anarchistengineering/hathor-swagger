@@ -16,5 +16,16 @@
     "hapi-swaggered": "^2.8.1",
     "hapi-swaggered-ui": "^2.6.0",
     "hathor-utils": "^0.0.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anarchistengineering/hathor-swagger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anarchistengineering/hathor-swagger/issues"
+  },
+  "homepage": "https://github.com/anarchistengineering/hathor-swagger#readme"
 }
