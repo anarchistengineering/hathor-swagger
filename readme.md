@@ -1,7 +1,7 @@
 Hathor Swagger
 ===
 
-Provides Swagger API documentation for Hathor projects.  Hathor Swagger is built on top of [Hapi Swaggard UI](https://github.com/z0mt3c/hapi-swaggered-ui), more details can be found in their documentation about marking up your routes.
+Provides Swagger API documentation for Hathor projects.  Hathor Swagger is built on top of [Hapi Swaggard](https://github.com/z0mt3c/hapi-swaggered) and [Hapi Swaggard UI](https://github.com/z0mt3c/hapi-swaggered-ui), more details can be found in their documentation about marking up your routes.
 
 Install
 ---
@@ -49,8 +49,20 @@ module.exports = {
     notes: 'Returns a greeting based on to passed in.',
     tags: ['api'],
     validate: {
-      query: {
+      params: { // Stuff passed in the URI parameters
+
+      },
+      query: { // Stuff passed in the query string
         to: Joi.string().optional().description('Who to greet')
+      },
+      payload: { // What the payload looks like
+
+      }
+    },
+    response: {
+      status: { // What is sent back per statusCode
+        200: Joi.string().description('Greeting') // On a 200 (OK) we send back a greeting string
+        // If you had other response types, then you would list them here
       }
     }
   },
